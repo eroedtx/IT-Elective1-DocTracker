@@ -67,4 +67,6 @@ MIT License - feel free to use this project for your own purposes.
 
 ## Contributors
 
--   [Your Name/Group Members' Names] 
+-   Generoso, Merwin M.
+-   Diaz, Lashawn Railey H.
+-   Corales, Zedryl Hershey B.
