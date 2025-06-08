@@ -1,66 +1,70 @@
-# DocTracker
+# DocTracker - IT Elective 1 Final Project
 
-A simple, minimalist document tracking system with a black and white theme. This web application allows users to insert and track documents across different departments.
+A simple, minimalist web application for tracking documents across different departments. This project demonstrates client-side interactivity with server-side data persistence using PHP and MySQL.
 
 ## Features
 
-- Clean, minimalist black and white design
-- Responsive layout that works on both desktop and mobile devices
-- Document insertion form with department-specific templates
-- Document tracking with search and filter capabilities
-- Status tracking for documents (Pending, In Review, Approved, Rejected)
-- Priority levels for documents (Low, Medium, High)
+-   **Document Management**: Insert, track, and view documents.
+-   **Departmental Templates**: Dynamically generated forms based on document type.
+-   **Search & Filter**: Efficiently find documents by title, ID, department, type, or status.
+-   **Status Tracking**: Documents can have statuses like Pending, In Review, Approved, Rejected.
+-   **Responsive Design**: Optimized for both desktop and mobile devices.
 
 ## Pages
 
-1. **Document Insertion Page** (`index.html`)
-   - Form for submitting new documents
-   - Department selection
-   - Document type selection
-   - Priority setting
-   - File upload capability
+1.  **Document Insertion (`index.php`)**: Form for submitting new documents with dynamic templates.
+2.  **Document Tracking (`tracking.php`)**: Dashboard to search, filter, and view document details.
 
-2. **Document Tracking Page** (`tracking.html`)
-   - Search functionality
-   - Status and department filters
-   - Document table with sortable columns
-   - Document status indicators
-   - Quick view of document details
+## Technical Stack
 
-## Technical Details
+-   **Frontend**: HTML5, CSS3, ES6+ JavaScript
+-   **Backend**: PHP
+-   **Database**: MySQL
+-   **Data Persistence**: Server-side storage via MySQL.
 
-- Built with vanilla HTML, CSS, and JavaScript
-- No external dependencies required
-- Responsive design using CSS media queries
-- Client-side data storage (for demonstration purposes)
-- Clean and semantic HTML structure
-- Modern CSS features for styling
-- Event-driven JavaScript for interactivity
+## Cloud Integration
+
+-   **Cloud Repository**: Hosted on [GitHub](https://github.com/eroedtx/IT-Elective1-DocTracker) for version control and collaboration.
+-   **Cloud Deployment**: Planned for deployment on a cloud platform like AWS Lightsail (using a LAMP stack) for persistent web access and database hosting.
 
 ## Getting Started
 
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. No build process or server required
+### Prerequisites
 
-## Browser Support
+-   A web server with PHP (e.g., Apache)
+-   MySQL database
+-   Composer (optional, for PHP dependency management if you expand)
 
-The application works on all modern browsers that support:
-- HTML5
-- CSS3
-- ES6+ JavaScript
+### Local Setup
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/eroedtx/IT-Elective1-DocTracker.git
+    cd IT-Elective1-DocTracker
+    ```
+2.  **Database Setup**:
+    *   Create a MySQL database named `doctracker_db`.
+    *   Import the SQL schema and initial data (provided in a `database.sql` file, which you should create).
+    *   Update `config.php` with your MySQL credentials (DB_USER, DB_PASS).
+3.  **Server Configuration**: Place the project files in your web server's document root (e.g., `htdocs` for XAMPP).
+4.  **Access**: Open `http://localhost/IT-Elective1-DocTracker/index.php` (adjust path as per your setup).
+
+### Deployment (High-Level)
+
+The project can be deployed to any hosting environment supporting PHP and MySQL, such as AWS Lightsail, DigitalOcean, or a shared hosting provider.
 
 ## Future Improvements
 
-- Backend integration for persistent storage
-- User authentication and authorization
-- Document version control
-- Advanced search capabilities
-- Document preview functionality
-- Export/Import features
-- Email notifications
-- API integration for cloud storage
+-   User authentication and authorization
+-   Document version control
+-   Advanced search capabilities
+-   Document preview functionality directly in the browser
+-   Export/Import features for documents
 
 ## License
 
-MIT License - feel free to use this project for your own purposes. 
+MIT License - feel free to use this project for your own purposes.
+
+## Contributors
+
+-   [Your Name/Group Members' Names] 
